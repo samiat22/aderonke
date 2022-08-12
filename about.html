@@ -5,35 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div>
-            <span>LOGO</span>
-        </div>
 
-        <nav>
+   <header>
+        <div class="container">
+           <div id="branding">
+            <a href=""><span class="logo">LOGO</span></a>
+           </div> 
+
+           <!--Adding Navigations -->
+           <nav>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Service</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Service</a></li>
             </ul>
-        </nav>
+           </nav>     
+        </div>
     </header>
-    <hr>
 
     <main>
-            <section>
-                <h2>Subscribe</h2>
+        <section id="newsletter">
+            <div class="newsletter-container">
+                <h2>Subscribe to our newsletter</h2>
                 <form action="">
-                    <label for="">Email</label>
-                    <input type="email" placeholder="Enter your email">
-                    <input type="submit">
-                </form>
-            </section>
+                    
+                    <div id="errorMsg"></div>
 
-            <section>
-                <article>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="email-input" value="" placeholder="Enter your email">
+                    <input type="submit" id="submit-btn" value="Subscribe">
+                </form>
+            </div>
+        </section>
+
+            <section id="about-section">
+                <div class="about-section-container">
+               
+                <article class="main-content">
                     <h2>About Us</h2>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -42,7 +53,7 @@
                           perferendis sapiente aliquid distinctio asperiores.
                     </p>
 
-                    <p>
+                    <p class="about-background">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                          Tenetur, sit eos iusto sunt, accusamus, quaerat doloremque 
                          explicabo ut illum architecto dolorum eveniet autem laborum facilis
@@ -50,20 +61,27 @@
                     </p>
                 </article>
                     
-                <article>
+                <article class="aside-content about-background">
                     <h2>What We Do</h2>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         Tenetur, sit eos iusto sunt, accusamus, quaerat doloremque 
                         explicabo ut illum architecto dolorum eveniet autem laborum facilis
                          perferendis sapiente aliquid distinctio asperiores.
+                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                         Tenetur, sit eos iusto sunt, accusamus, quaerat doloremque 
+                         explicabo ut illum architecto dolorum
                     </p>
                 </article>
+
+                </div>
             </section>
     </main>
 
     <footer>
         <p>&copy; 2022</p>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>

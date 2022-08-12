@@ -169,10 +169,6 @@ footer{
 
 /* Service styling */
 
-#service-section{
-
-}
-
 .service-section-container{
     display: flex;
     justify-content: space-around;
@@ -184,7 +180,7 @@ footer{
 
 .aside-form{
     width: 30%;
-    height: 360px;
+    height: 400px;
     background-color: #7D8CC4;
     margin-top: 20px;
     padding: 20px;
@@ -211,6 +207,28 @@ footer{
     outline: none;
 }
 
+/* Error Message Styling */
+#errorMsg{
+     color: #aaa;
+     margin-left: 50px;
+     font-size: 10px;
+     width: 200px;
+     text-align: center;
+     margin-bottom: 5px;
+     padding: 5px;
+
+}
+
+#quoteErrorMsg{
+    color: #aaa;
+    font-size: 10px;
+    width: 150px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* Responsiveness styling */
 @media (max-width: 768px) {
 
     header li{
